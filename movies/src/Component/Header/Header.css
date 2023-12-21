@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(29, 26, 26);
+}
+
+.container {
+  background-image: url(../Search/Cine.png);
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  height: 90px;
+}
+
+.container h1 {
+  padding-bottom: 10px;
+  padding-top: 15px;
+  color: rgb(246, 13, 13);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  opacity: 0.9.9;
+}
+
+.container h4 {
+  color: rgb(245, 237, 237);
+  margin-top: 15px;
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+ 
+}
+
+input[type="text"] {
+  margin-top: 70px;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  width: 90px;
+  background-color: rgb(21, 158, 249);
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.movie-card {
+  padding: 20px;
+  color: rgb(232, 238, 244);
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.movie-card h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.movie-card p {
+  margin-bottom: 5px;
+}
+
+/* Estilo movile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+
+  .movie-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .movie-card {
+    padding: 10px;
+  }
+
+  .movie-card h2 {
+    font-size: 16px;
+  }
+}
